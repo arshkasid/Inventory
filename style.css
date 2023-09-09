@@ -1,0 +1,195 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Console';
+    /* for horizontal scroll bar to be hidden */
+}
+.logo{
+    width: 5%;
+    height: 5%;
+}
+
+.card-img-top{
+    width: 100%;
+    height: 200px;
+    object-fit:contain ;
+}
+
+.admin_image{
+    width: 100px;
+    object-fit: contain;
+}
+
+
+.footer{
+    position:absolute ;
+    bottom: 0;
+}
+.cart_img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+
+}
+
+
+.nab-box-out{
+background-image: url('https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80');
+
+  background-size:     cover;            
+  background-repeat:   no-repeat;
+  background-position: center;
+  height: 60px;
+}
+
+
+.footerdown{
+    /* background: #373B44; 
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  
+    background: linear-gradient(to right, #4286f4, #373B44);  */
+
+    background: #000;
+    color: aliceblue;
+}
+
+.sidehead{
+    background-color:#6b91b6;
+}
+
+.seconndaryside{
+    background-color:rgb(146, 171, 194);
+
+    
+}
+
+
+
+.navtext-box{
+    display:flex;
+flex-direction:column;
+justify-content:center;
+color: aliceblue;
+}
+
+.actualtext{
+    color: aliceblue;
+}
+
+
+
+
+
+
+/* <style> */
+.card-container {
+    padding-top:165px ;
+    padding-left: 620px;
+perspective: 1000px;
+}
+
+.card {
+    
+    border: 1px solid rgb(158, 39, 39);
+border-radius: 10px;
+position: relative;
+
+transition: transform 1s;
+transform-style: preserve-3d;
+}
+
+.front, .back {
+    border-radius: 10px;
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+}
+
+.front {
+    color:rgb(158, 39, 39);
+    background: linear-gradient(to bottom right, rgb(243, 206, 134) 80%, rgb(158, 39, 39)20%);
+
+}
+
+.back {
+    color: white;
+    background: linear-gradient(to bottom right, rgb(158, 39, 39)80%, rgb(243, 206, 134) 20%);
+transform: rotateY(180deg);
+}
+
+.card-container:hover .card {
+    border-radius: 10px;
+transform: rotateY(180deg);
+}
+
+.center{
+    padding-top:100px ;
+    text-align: center;
+    margin: 55px;
+}
+.center1{
+    padding-top:20px ;
+    text-align: center;
+    margin: 55px;
+}
+.triangle {
+position: absolute;
+bottom: 0;
+left: 50%;
+width: 0;
+height: 0;
+border-left: 30px solid transparent;
+border-right: 30px solid transparent;
+border-top: 30px solid #3498db;
+transform: translateX(-50%);
+}
+/* </style> */
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+if(isset($_POST['user_register'])) {
+$user_username=$_POST['user_username'];
+$user_email=$_POST['user_email'];
+$user_password=$_POST['user_password'];
+$conf_user_password=$_POST['conf_user_password'];
+$user_address=$_POST['user_address'];
+$user_contact=$_POST['user_contact'];
+$user_image=$_FILES['user_image']['name'];
+$user_image_tmp=$_FILES['user_image']['tmp_name'];
+$user_ip=getIPAddress();
+
+
+
+// insert query
+move_uploaded_file($user_image_tmp,"./user_images/$user_image");
+// $insert_query="insert into `user_table` (username,user_email,user_password,user_image,user_ip,user_address,user_mobile) values ('$user_username','$user_email','$user_password','$user_image','$user_ip','$user_address','$user_contact')";
+
+$insert_query="INSERT INTO `user_table`(`username`, `user_email`, `user_password`, `user_image`, `user_ip`, `user_address`, `user_mobile`) VALUES ('$user_username','$user_email','$user_password','$user_image','$user_ip','$user_address','$user_contact')";
+
+
+
+$sql_execute=mysqli_query($con,$insert_query);
+
+if($sql_execute){
+    echo "<script>alert('user registered successfully')</script>";
+}
+else{
+    die(mysqli_error($con));
+}
+
+
+} */
+
+
+
